@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+</head>
+<body>
+    
+    <!--Header-->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo" style="display: inline-flex; align-items: center; padding-left: 60px; height: 40px; font-weight: bold; background-image: url('server-2.png'); background-size: contain; background-repeat: no-repeat; background-position: left center; color: #fff; text-decoration: none;" onmouseover="this.style.color = '#15cbeb';" onmouseout="this.style.color = '#fff';">OB-Server</a>
+
+
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Home</a>
+                    <a href="#" class="nav_link">Product</a>
+                    <a href="#" class="nav_link">Services</a>
+                    <a href="#" class="nav_link">Contact</a>
+                </li>    
+            </ul>
+    
+            <button class="button" id="form-open" style="border-color: #6cccdb; color: #6cccdb;">Login</button>
+
+        </nav> 
+    </header>
+
+
+    <!--Home-->
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <!--Login form-->
+            <div class="form login_form">
+                <form action="#" id="loginForm">
+                    <h2>Login</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required/>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password" required/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check"/>
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">forgot password?</a>
+                    </div>
+                    <button class="button">Login Now</button>
+
+
+                    <div class="login_signup">
+                        Don't have an account? <a href="#" id="signup">Signup</a>
+                    </div>
+                </form>
+            </div>
+
+<!-- Registration form -->
+<div class="form signup_form">
+    <form action="#" id="signupForm">
+        <h2>Signup</h2>
+    
+        <div class="input_box">
+            <input type="text" placeholder="Full Name" required/>
+            <i class="uil uil-user email"></i>
+        </div>
+        <div class="input_box">
+            <input type="email" placeholder="Email" required/>
+            <i class="uil uil-envelope-alt email"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="Password" required/>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+        </div>
+        <div class="input_box">
+            <input type="password" placeholder="Confirm Password" required/>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+        </div>
+        <div class="input_box">
+            <input type="text" placeholder="Username (optional)"/>
+            <i class="uil uil-user email"></i>
+        </div>
+        <div class="input_box">
+            <input type="date" required/>
+            <i class="uil uil-calendar-alt email"></i>
+        </div>
+        <div class="input_box">
+            <select required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <i class="uil uil-venus-mars email"></i>
+        </div>
+        <div class="input_box">
+            <input type="tel" placeholder="Phone Number" required/>
+            <i class="uil uil-phone email"></i>
+        </div>
+        <div class="input_box">
+            <input type="text" placeholder="Country/Region" required/>
+            <i class="uil uil-globe email"></i>
+        </div>
+    
+        <button class="button">Signup Now</button>
+    
+        <div class="login_signup">
+            Already have an account? <a href="#" id="login">Login</a>
+        </div>
+    </form>
+    
+</div>
+
+            <!-- Password recovery form -->
+            <div class="form recovery_form">
+                <form action="#" id="recoveryForm">
+                    <h2>Password Recovery</h2>
+
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email" required />
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+
+                    <button class="button">Send Recovery Email</button>
+
+                    <div class="login_signup">
+                        Back to <a href="#" id="backToLogin">Login</a>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer_container">
+            <p>&copy; 2023 OB-Server. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
